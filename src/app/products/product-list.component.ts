@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IProduct } from './product';
-import { ProductSerive } from './product.service';
+import { ProductService } from './product.service';
 
 @Component({
     templateUrl: './product-list.component.html',
@@ -27,7 +27,7 @@ export class ProductListComponent implements OnInit{
 
     products: IProduct[] = [];
 
-    constructor(private productService: ProductSerive) {
+    constructor(private productService: ProductService) {
 
     }
 
